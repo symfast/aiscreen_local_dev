@@ -1,0 +1,82 @@
+// --------------------
+// Fonts
+// --------------------
+// Helvetica Neue LT Pro
+
+@font-face {
+  font-family: "Helvetica Neue LT Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueLTProBd.otf") format("opentype"),
+    url("../fonts/HelveticaNeueLTProBd.woff") format("woff"), url("../fonts/HelveticaNeueLTProBd.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Helvetica Neue LT Pro Ex";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueLTProEx.otf") format("opentype"),
+    url("../fonts/HelveticaNeueLTProEx.woff") format("woff"), url("../fonts/HelveticaNeueLTProEx.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Helvetica Neue LT Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueLTProIt.otf") format("opentype"),
+    url("../fonts/HelveticaNeueLTProIt.woff") format("woff"), url("../fonts/HelveticaNeueLTProIt.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT Pro Ex";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueLTProLtEx.otf") format("opentype"),
+    url("../fonts/HelveticaNeueLTProLtEx.woff") format("woff"),
+    url("../fonts/HelveticaNeueLTProLtEx.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT Pro";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueLTProLtIt.otf") format("opentype"),
+    url("../fonts/HelveticaNeueLTProLtIt.woff") format("woff"),
+    url("../fonts/HelveticaNeueLTProLtIt.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+
+  src: url("../fonts/HelveticaNeueLTProMd.otf") format("opentype"),
+    url("../fonts/HelveticaNeueLTProMd.woff") format("woff"), url("../fonts/HelveticaNeueLTProMd.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT Pro Ex";
+  src: url("../fonts/HelveticaNeueLTProMdEx.otf") format("opentype"),
+    url("../fonts/HelveticaNeueLTProMdEx.woff") format("woff"),
+    url("../fonts/HelveticaNeueLTProMdEx.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueLTProRoman.otf") format("opentype"),
+    url("../fonts/HelveticaNeueLTProRoman.woff") format("woff"),
+    url("../fonts/HelveticaNeueLTProRoman.woff2") format("woff2");
+}
+// --------------------
+// End Fonts
+// --------------------

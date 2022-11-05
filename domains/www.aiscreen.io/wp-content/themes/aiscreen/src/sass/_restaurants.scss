@@ -1,0 +1,593 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// RESTAURANTS
+.bl_header_r {
+  background-image: url("../img/bg/bg_contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @media (max-width: 768px) {
+    background-size: auto;
+  }
+  .bl_header_r__text {
+    padding-top: vw(242);
+    padding-bottom: vw(160);
+    @media (max-width: 768px) {
+      padding-top: vw_m(100);
+      padding-bottom: vw_m(60);
+    }
+    .bl_header_r__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+    .bl_header_r__left {
+      width: 48%;
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: vw_m(50);
+      }
+      p {
+        font-family: $HelvEx;
+        font-size: vw(24);
+        font-weight: 300;
+        color: $black;
+        text-transform: uppercase;
+        margin-bottom: vw(5);
+        letter-spacing: 0;
+        line-height: 130%;
+        @media (max-width: 768px) {
+          font-size: vw_m(18);
+        }
+        @media (max-width: 600px) {
+          font-size: vw_m(14);
+        }
+      }
+      h1 {
+        color: $black;
+        @media (max-width: 600px) {
+          letter-spacing: -0.2px;
+        }
+        span {
+          color: $blue;
+          // @media (max-width: 600px) {
+          //   color: $black;
+          // }
+        }
+      }
+
+      .btn_free_trial {
+        background-color: $black;
+        color: #fff;
+      } 
+
+
+    }
+    .bl_header_r__right {
+      width: 49.6%;
+      margin-top: vw(40);
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 0;
+      }
+      p {
+        font-size: vw(24);
+        font-family: $HelvEx;
+        font-weight: 300;
+        margin-bottom: vw(47);
+        letter-spacing: 0;
+        max-width: vw(814);
+        line-height: 156%;
+        @media (max-width: 768px) {
+          max-width: none;
+          font-size: vw_m(16);
+          margin-bottom: vw_m(40);
+        }
+      }
+      .btn_free_trial {
+        background-color: $black;
+        color: #fff;
+      }
+    }
+  }
+
+  .bl_ticker {
+    background-color: transparent;
+    padding-bottom: 0;
+    .bl_ticker__content {
+      .bl_ticker__slides {
+        .swiper {
+          .swiper-slide {
+            border-top: vw(1) solid $black;
+            border-left: vw(1) solid $black;
+            border-bottom: vw(1) solid $black;
+            width: fit-content;
+            @media (max-width: 768px) {
+              width: auto;
+            }
+
+            .bl_ticker__title {
+              border-bottom: vw(1) solid $black;
+              h4 {
+                color: $black;
+                width: fit-content;
+                margin: 0 auto;
+                &::before {
+                  content: "";
+                  background-color: $black;
+                }
+              }
+            }
+            .bl_ticker__img {
+              padding: vw(30);
+              height: vw(384);
+              @media (max-width: 768px) {
+                height: vw_m(200);
+                padding: vw_m(8) vw_m(13);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END RESTAURANTS
+// ========================================
+// SEE WHAT
+.bl_see_what__restaurants {
+  padding-top: vw(92);
+  // background-image: url("../img/bg/bg_bl_see_what.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center center;
+  background-color: #141414;
+  @media (max-width: 768px) {
+    padding-top: vw_m(45);
+  }
+  @media (max-width: 390px) {
+    background-size: auto;
+  }
+  .bl_see_what__content {
+    h2 {
+      color: #fff;
+      margin-bottom: vw(92);
+      @media (max-width: 768px) {
+        margin-bottom: vw_m(45);
+      }
+    }
+    .bl_see_what__items {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        height: vw(1);
+        width: 200%;
+        background-color: #fff;
+        position: absolute;
+        left: -50%;
+        top: 0;
+      }
+      .swiper {
+        overflow: inherit;
+        .swiper-wrapper {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 0 vw(120);
+          @media (max-width: 768px) {
+            display: flex;
+            gap: 0;
+          }
+          .swiper-slide {
+            padding-top: vw(98);
+            padding-bottom: vw(75);
+            height: auto;
+            box-sizing: border-box;
+
+            @media (max-width: 768px) {
+              padding-top: vw_m(45);
+              padding-bottom: vw_m(70);
+              width: 100%;
+              padding-right: vw_m(30);
+            }
+
+            &:nth-child(1n) {
+              &::after {
+                content: "";
+                display: block;
+                width: vw(1);
+                height: 100%;
+                background-color: #fff;
+                position: absolute;
+                right: vw(-60);
+                top: 0;
+                bottom: 0;
+                @media (max-width: 768px) {
+                  display: none;
+                }
+              }
+              @media (max-width: 768px) {
+                width: auto;
+              }
+            }
+            &:nth-child(2n) {
+              &::before {
+                content: "";
+                display: block;
+                width: 500%;
+                height: vw(1);
+                background-color: #fff;
+                position: absolute;
+                right: 0;
+                left: -250%;
+                bottom: 0;
+                @media (max-width: 768px) {
+                  display: none;
+                }
+              }
+              &::after {
+                @media (max-width: 768px) {
+                  display: none;
+                }
+              }
+              @media (max-width: 768px) {
+                width: auto;
+              }
+            }
+            &:nth-child(3n) {
+              // padding-left: vw(60);
+              // padding-right: 0;
+              border-right: 0;
+            }
+            &:last-child {
+              &::after {
+                @media (max-width: 768px) {
+                  display: none;
+                }
+              }
+            }
+            h3 {
+              color: #fff;
+              font-family: $HelvEx;
+              font-size: vw(34);
+              line-height: vw(46);
+              font-weight: 400;
+              margin-bottom: vw(45);
+              text-transform: uppercase;
+              @media (max-width: 768px) {
+                height: auto;
+                margin-bottom: vw_m(40);
+                font-size: vw_m(24);
+                line-height: vw_m(32);
+              }
+            }
+            .bl_see_what__img {
+              height: vw(325);
+              width: 100%;
+              overflow: hidden;
+              margin-bottom: vw(44);
+              @media (max-width: 768px) {
+                height: calc(vw_m(170) + (480 - 170) * ((100vw - vw_m(320)) / (768 - 320)));
+                margin-bottom: vw_m(40);
+              }
+              img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+              }
+            }
+            p {
+              color: #fff;
+              font-size: vw(24);
+              @media (max-width: 768px) {
+                height: auto;
+                font-size: vw_m(16);
+              }
+            }
+
+            .btn_underline_white {
+              white-space: normal;
+            }
+          }
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+          display: none;
+        }
+        .swiper-button-next {
+          @media (max-width: 768px) {
+            display: block;
+            width: vw_m(30);
+            height: vw_m(22);
+            right: vw(-15);
+            top: 44%;
+          }
+          &::after {
+            display: none;
+          }
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+        .swiper-button-disabled {
+          opacity: 0;
+          transition: 0.3s;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
+// END SEE WHAT
+// ========================================
+// 5 REASONS
+.bl_5_reasons {
+  padding-top: vw(92);
+  background-image: url("../img/restaurants/bg_5_reasons.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @media (max-width: 768px) {
+    padding-top: vw_m(40);
+  }
+  @media (max-width: 600px) {
+    background-image: url("../img/restaurants/bg_5_reasons__mob.png");
+  }
+  .bl_5_reasons__content {
+    h2 {
+      margin-bottom: vw(50);
+      @media (max-width: 768px) {
+        margin-bottom: vw_m(40);
+      }
+      br {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+    .bl_5_reasons__body {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      justify-content: space-between;
+      align-items: flex-start;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+      &::before {
+        content: "";
+        display: block;
+        height: vw(1);
+        width: 200%;
+        background-color: $black;
+        position: absolute;
+        top: 0;
+        left: -50%;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+    .bl_5_reasons__img {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: vw(36) vw(53);
+      // border-right: vw(1) solid $black;
+      padding-top: vw(60);
+      padding-right: vw(60);
+      padding-bottom: vw(10);
+      width: 57%;
+      @media (max-width: 768px) {
+        width: 100%;
+        padding-bottom: vw_m(45);
+        padding-top: 0;
+        padding-right: 0;
+        gap: vw_m(10) vw_m(13);
+      }
+      .image__top {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border: vw(5) solid #3b3b3b;
+        @media (max-width: 768px) {
+          border: vw_m(2) solid #3b3b3b;
+        }
+        img {
+          display: block;
+        }
+      }
+      .image__mini {
+        border: vw(5) solid #141414;
+        @media (max-width: 768px) {
+          border: vw_m(2) solid #141414;
+        }
+        img {
+          display: block;
+        }
+      }
+    }
+    .bl_5_reasons__text {
+      border-left: vw(1) solid $black;
+      width: 43%;
+      @media (max-width: 768px) {
+        width: 100%;
+        border-left: 0;
+      }
+      ul {
+        li {
+          // border-bottom: vw(1) solid $black;
+          padding-left: vw(153);
+          padding-top: vw(61);
+          padding-bottom: vw(58);
+          position: relative;
+          @media (max-width: 768px) {
+            padding-left: 0;
+            padding-top: vw_m(25);
+            padding-bottom: vw_m(20);
+          }
+          &:first-child {
+            &::before {
+              content: "";
+              display: block;
+              width: 200%;
+              height: vw(1);
+              position: absolute;
+              left: -50%;
+              top: 0;
+              background-color: $black;
+              display: none;
+              @media (max-width: 768px) {
+                display: block;
+              }
+            }
+          }
+          &:last-child {
+            &::after {
+              display: none;
+              @media (max-width: 768px) {
+                display: block;
+              }
+            }
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 200%;
+            height: vw(1);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: $black;
+            @media (max-width: 768px) {
+              left: -50%;
+            }
+          }
+          > span {
+            font-family: $HelvEx;
+            font-size: vw(24);
+            line-height: vw(32);
+            font-weight: 500;
+            color: $black;
+            position: absolute;
+            top: vw(57);
+            left: vw(60);
+            @media (max-width: 768px) {
+              left: 0;
+              top: vw_m(19);
+              font-size: vw_m(20);
+              line-height: 1;
+            }
+          }
+          h3 {
+            font-family: $Helv;
+            font-size: vw(24);
+            font-weight: 500;
+            margin-bottom: vw(21);
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            @media (max-width: 768px) {
+              padding-left: vw_m(70);
+              margin-bottom: vw_m(15);
+              margin-top: vw_m(-5);
+              font-size: vw_m(20);
+              line-height: 1;
+            }
+          }
+          p {
+            max-width: vw(500);
+            font-size: vw(24);
+            line-height: 130%;
+            @media (max-width: 768px) {
+              max-width: none;
+              font-size: vw_m(20);
+            }
+            @media (max-width: 390px) {
+              letter-spacing: 0.2px;
+              line-height: vw_m(34);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END 5 REASONS
+// ========================================
+// TRUST RESTAURANTS
+.bl_trust__restaurants {
+  .bl_trust__content {
+    h2 {
+      width: 50%;
+      padding-left: vw(160);
+      @media (max-width: 768px) {
+        padding-left: vw_m(60);
+        width: 100%;
+      }
+      @media (max-width: 600px) {
+        padding-left: vw_m(30);
+      }
+    }
+    .bl_trust__items {
+      width: 50%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      .trust_ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @media (max-width: 600px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 425px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .trust_li {
+          &:first-child,
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6),
+          &:nth-child(7),
+          &:nth-child(8),
+          &:nth-child(9),
+          &:nth-child(10),
+          &:nth-child(11),
+          &:nth-child(12) {
+           /* display: block;*/
+          }
+          &:nth-child(13),
+          &:nth-child(14),
+          &:nth-child(15) {
+         
+          }
+          &:nth-child(9),
+          &:nth-child(10),
+          &:nth-child(11),
+          &:nth-child(12),
+          &:nth-child(13),
+          &:nth-child(14),
+          &:nth-child(15) {
+            @media (max-width: 425px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END TRUST RESTAURANTS
+// ========================================

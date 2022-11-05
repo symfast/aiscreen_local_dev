@@ -1,0 +1,253 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// REVIEWS
+.bl_reviews {
+  background-color: #141414;
+  padding-top: vw(93);
+  padding-bottom: vw(100);
+  @media (max-width: 768px) {
+    padding-top: vw_m(45);
+    padding-bottom: vw_m(45);
+  }
+  .bl_reviews__content {
+    h2 {
+      margin-bottom: vw(48);
+      margin-right: vw(380);
+      color: #fff;
+      @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: vw_m(85);
+      }
+    }
+
+    .bl_reviews__slides {
+      border-top: vw(1) solid #fff;
+      padding-top: vw(60);
+      position: relative;
+      @media (max-width: 768px) {
+        padding-top: vw_m(25);
+      }
+      .swiper {
+        position: static;
+        .swiper-wrapper {
+          .swiper-slide {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            @media (max-width: 768px) {
+              flex-direction: column;
+              align-items: center;
+            }
+            .bl_reviews__img {
+              max-width: vw(390);
+              min-width: vw(390);
+              max-height: vw(390);
+              min-height: vw(390);
+              border-radius: 50%;
+              border: vw(2) solid #fff;
+              margin-right: vw(60);
+              overflow: hidden;
+              @media (max-width: 768px) {
+                max-width: vw_m(140);
+                min-width: vw_m(140);
+                max-height: vw_m(140);
+                min-height: vw_m(140);
+                padding: vw_m(2);
+                margin-right: 0;
+                margin-bottom: vw_m(25);
+              }
+              .photo {
+                width: 100%;
+                height: 100%;
+                border: vw(12) solid #141414;
+                border-radius: 50%;
+                overflow: hidden;
+                img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: center;
+                }
+              }
+            }
+            .bl_reviews__text {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              .text__top {
+                margin-bottom: vw(45);
+                @media (max-width: 768px) {
+                  margin-bottom: vw_m(25);
+                }
+                blockquote {
+                  font-family: $Helv;
+                  font-weight: 300;
+                  font-size: vw(32);
+                  line-height: vw(42);
+                  letter-spacing: 0.6px;
+                  font-style: italic;
+                  color: #fff;
+                  @media (max-width: 768px) {
+                    font-size: vw_m(16);
+                    line-height: vw_m(24);
+                  }
+                }
+              }
+              .text__bottom {
+                padding-top: vw(30);
+                border-top: vw(1) solid #fff;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                @media (max-width: 768px) {
+                  flex-direction: column;
+                  padding-top: vw_m(25);
+                }
+                > p {
+                  display: block;
+                  margin-right: vw(20);
+                  @media (max-width: 768px) {
+                    margin-right: 0;
+                    margin-bottom: vw_m(25);
+                  }
+                  cite {
+                    font-family: $HelvEx;
+                    font-size: vw(24);
+                    line-height: vw(32);
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #fff;
+                    margin-bottom: vw(15);
+                    letter-spacing: 0.2px;
+                    @media (max-width: 768px) {
+                      font-size: vw_m(16);
+                      line-height: vw_m(32);
+                      margin-bottom: vw_m(10);
+                    }
+                  }
+                  span {
+                    display: block;
+                    font-family: $HelvEx;
+                    font-weight: 300;
+                    font-size: vw(20);
+                    line-height: 140%;
+                    color: #fff;
+                    letter-spacing: 0.1px;
+                    @media (max-width: 768px) {
+                      font-size: vw_m(14);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .swiper-button-prev {
+          position: absolute;
+          left: auto;
+          right: vw(205);
+          top: vw(-61);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          height: auto;
+          width: auto;
+          transition: 0.3s;
+
+          @media (max-width: 768px) {
+            top: vw_m(-25);
+            right: auto;
+            left: 0;
+          }
+          &:hover {
+            transition: 0.3s;
+            opacity: 0.6;
+          }
+          &::after {
+            display: none;
+          }
+          span {
+            color: #fff;
+            white-space: nowrap;
+            font-family: $HelvEx;
+            font-size: vw(20);
+            line-height: vw(24);
+            font-weight: 500;
+            text-transform: lowercase;
+            margin-left: vw(12);
+            letter-spacing: 0.3px;
+
+            @media (max-width: 768px) {
+              font-size: vw_m(16);
+              line-height: vw_m(20);
+              margin-left: vw_m(12);
+            }
+          }
+          img {
+            display: block;
+            width: vw(20);
+            margin-top: vw(4);
+            @media (max-width: 768px) {
+              margin-top: vw_m(2);
+              width: vw_m(20);
+            }
+          }
+        }
+        .swiper-button-next {
+          position: absolute;
+          right: 0;
+          top: vw(-61);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: auto;
+          transition: 0.3s;
+          height: auto;
+          @media (max-width: 768px) {
+            top: vw_m(-25);
+          }
+          &:hover {
+            transition: 0.3s;
+            opacity: 0.6;
+          }
+          &::after {
+            display: none;
+          }
+          span {
+            color: #fff;
+            white-space: nowrap;
+            font-family: $HelvEx;
+            font-size: vw(20);
+            line-height: vw(24);
+            font-weight: 500;
+            text-transform: lowercase;
+            margin-right: vw(12);
+            letter-spacing: 0.3px;
+            @media (max-width: 768px) {
+              font-size: vw_m(16);
+              line-height: vw_m(20);
+              margin-right: vw_m(12);
+            }
+          }
+          img {
+            display: block;
+            width: vw(20);
+            margin-top: vw(4);
+            @media (max-width: 768px) {
+              margin-top: vw_m(2);
+              width: vw_m(20);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// END REVIEWS
+// ========================================

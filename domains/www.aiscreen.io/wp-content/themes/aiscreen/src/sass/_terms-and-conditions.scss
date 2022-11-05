@@ -1,0 +1,117 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+.wrapper-documentation {
+    padding-left: vw(400);
+    padding-top: vw(220);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: vw(160);
+    font-family: $Helv;
+    .documentation {
+        width: vw(1000);
+        font-family: $Helv;
+        h1 {
+            font-family: $Helv;
+            font-weight: bold;
+            font-size: vw(64);
+            line-height: vw(77);
+            margin-bottom: vw(30);
+            white-space: pre-line;
+            color: $blackColor;
+        }
+        h2 {
+            font-family: $Helv;
+            margin-top: vw(60);
+            font-weight: bold;
+            font-size: vw(24);
+            line-height: vw(34);
+            margin-bottom: vw(30);
+        }
+        p {
+            font-family: $Helv;
+            white-space: normal !important;
+            // white-space: pre-line;
+            font-size: vw(18);
+            line-height: vw(28);
+            margin-bottom: vw(30);
+        span {
+            font-family: $Helv;
+            font-weight: 500;
+        }
+        a {
+            font-family: $Helv;
+            display: inline;
+            color: $blue;
+        }
+        sup, sub {
+            font-family: $Helv;
+            color: red;
+        }
+        }
+        img {
+        width: 100%;
+        margin-bottom: vw(30);
+        display: block;
+        border: vw(5) solid $black;
+        }
+        ul {
+            padding-left: vw(40);
+            line-height: vw_m(30);
+            margin-bottom: vw(20);
+            @media screen and  (max-width: 767px) {
+                line-height: vw_m(30);
+            }
+            li {
+                font-size: vw(18);
+                line-height: vw(28);
+                font-family: $Helv;
+                list-style: disc;
+            }
+        }
+    }
+}
+@media screen and  (max-width: 768px) {
+    .wrapper-documentation {
+        padding: vw_m(120) vw_m(20) vw_m(60);
+        .documentation {
+            width: 100%;
+            h1 {
+            font-size: vw_m(36);
+            line-height: vw_m(43);
+            margin-bottom: vw_m(16);
+            }
+            h2 {
+            margin-top: vw_m(32);
+            font-weight: 500;
+            font-size: vw_m(18);
+            line-height: vw_m(20);
+            margin-bottom: vw_m(24);
+            }
+            p {
+            white-space: normal;
+            font-size: vw_m(16);
+            line-height: vw_m(24);
+            margin-bottom: vw_m(24);
+            }
+            img {
+            width: 100%;
+            margin-bottom: vw_m(32);
+            }
+            ul {
+                padding-left: vw_m(40);
+                line-height: vw_m(30);
+                margin-bottom: vw_m(20);
+                li {
+                    font-size: vw_m(16);
+                    line-height: vw_m(24);
+                    font-family: $Helv;
+                    list-style: disc;
+                }
+            }
+        }
+    }
+}

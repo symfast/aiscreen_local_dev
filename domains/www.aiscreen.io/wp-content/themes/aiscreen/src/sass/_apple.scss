@@ -1,0 +1,126 @@
+// ========================================
+//Variables
+@import "_variables.scss";
+//End Variables
+// ========================================
+// BASE
+.for_apple {
+  .btn_free_trial {
+    padding-top: vw(20);
+    @media (max-width: 768px) {
+    }
+  }
+  .btn_watch_video {
+    &::before {
+      content: "";
+      transform: translateY(-65%);
+    }
+  }
+  .btn_underline_blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $HelvEx;
+    font-size: vw(20);
+    line-height: vw(24);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: $blue;
+    position: relative;
+    margin-right: vw(30);
+    padding-bottom: vw(10);
+    white-space: nowrap;
+    transition: 0.3s;
+    width: fit-content;
+    @media (max-width: 768px) {
+      font-size: vw_m(16);
+      line-height: vw_m(20);
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: vw(2);
+      background-color: $blue;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: vw(20);
+      height: vw(20);
+      background-image: url("../img/icons/top_arrow50_blue.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      position: absolute;
+      right: vw(-35);
+      top: 0;
+    }
+    &:focus,
+    &:hover {
+      transition: 0.3s;
+      // opacity: 0.6;
+      color: #0319e4;
+    }
+  }
+  .btn_underline_blue {
+    &::after {
+      top: vw(-4);
+    }
+  }
+  .btn_underline_black {
+    &::after {
+      top: vw(-4);
+    }
+  }
+  .btn_underline_white {
+    &::after {
+      top: vw(-4);
+    }
+  }
+  // BASE
+  // ========================================
+  // INDEX
+
+  .bl_video {
+    .bl_video__video {
+      .btn_play_video {
+        img {
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .bl_reviews {
+    .bl_reviews__content {
+      .bl_reviews__slides {
+        .swiper {
+          .swiper-button-prev {
+            img {
+              margin-top: vw(-2);
+              @media (max-width: 768px) {
+                margin-top: vw_m(0);
+              }
+            }
+          }
+          .swiper-button-next {
+            img {
+              margin-top: vw(-2);
+              @media (max-width: 768px) {
+                margin-top: vw_m(0);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // END INDEX
+  // ========================================
+}

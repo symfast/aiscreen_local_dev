@@ -1,0 +1,48 @@
+.swiper-slide {
+    .btn_underline_black {
+        margin-top: vw(100);
+        @media (max-width: 768px) {
+            margin-top: vw_m(100);
+        }
+    }
+}
+
+.guides-block-content p {
+    font-size: vw(18);
+    line-height: vw(28);
+    letter-spacing: vw(0.4);
+    color: $black;
+    &:not(:last-child) {
+        margin-bottom: vw(54);
+    }
+    @media (max-width: 768px) {
+        font-size: vw_m(16);
+        line-height: vw_m(24);
+        letter-spacing: vw_m(0.4);
+
+        &:not(:last-child) {
+            margin-bottom: vw_m(20);
+        }
+    }
+}
+
+.guides-menu__sublist {
+    border-left: 3px solid #00ff40;
+    display: block !important;
+}
+
+#wpadminbar {
+    position: fixed !important;
+}
+
+body.admin-bar {
+        .main_header {
+            margin-top: 32px;
+            @media (max-width: 768px) {
+                margin-top: 46px;
+            }
+        }
+         .guides-menu-mobile{
+            margin-top:47px;
+         }
+   }
