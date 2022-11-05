@@ -19,7 +19,7 @@ To set up Local Overrides:
 
 4. Click Setup Overrides.
 ```
-5. Select which directory you want to save your changes to.
+5. Select directory  /aiscreen_local_dev/domain
 
 6. At the top of your viewport, click Allow to give DevTools read and write access to the directory.
 
