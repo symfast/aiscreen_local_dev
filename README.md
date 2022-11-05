@@ -9,17 +9,17 @@ npm install
 
 To set up Local Overrides:
 
-1. Open the Sources panel.
+1. Open the **Sources**  panel.
 
-2. Open the Overrides tab.
+2. Open the **Overrides**  tab.
 
-3. The Overrides tab
+3. The **Overrides**  tab
 ```
 ![enter image description here](https://wd.imgix.net/image/admin/KBYIoNu3MLcdTwVrF2of.png?auto=format&w=1600)
 ```
-4. Click Setup Overrides.
+4. Click **Setup Overrides** .
 
-5. Select directory  /aiscreen_local_dev/domain
+5. Select directory  **/aiscreen_local_dev/domain** 
 
 6. At the top of your viewport, click Allow to give DevTools read and write access to the directory.
 
