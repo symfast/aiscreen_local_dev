@@ -6,11 +6,11 @@
 // BLOCK
 
 .fancybox-content {
-  max-width: 55%;
+  width: 55%;
   background-color: transparent;
   @media (max-width: 768px) {
     padding: vw_m(30) vw_m(15);
-    max-width: 100%;
+    width: 100%;
   }
   .fancybox-button {
     @media (max-width: 768px) {

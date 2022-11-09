@@ -3064,13 +3064,13 @@ p {
 }
 
 .fancybox-content {
-  max-width: 55%;
+  width: 55%;
   background-color: transparent;
 }
 @media (max-width: 768px) {
   .fancybox-content {
     padding: 8vw 4vw;
-    max-width: 100%;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
