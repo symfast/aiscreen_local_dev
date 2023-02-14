@@ -504,7 +504,7 @@
   .bl_video__video {
     position: relative;
     width: 56%;
-    height: fit-content;
+    
     @media (max-width: 768px) {
       width: 100%;
       margin-bottom: vw_m(45);

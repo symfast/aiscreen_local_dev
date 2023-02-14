@@ -633,6 +633,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 @media (max-width: 390px) {
   .main_header .header__content {
@@ -660,6 +661,16 @@ p {
     z-index: 200;
   }
 }
+@media (max-width: 768px) {
+  .main_header .toggle-languages {
+    padding-right: 17.6vw;
+  }
+}
+.main_header .toggle-languages .switcher {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-18px);
+}
 .main_header .header__logo {
   max-width: 12.3958333333vw;
   min-width: 12.3958333333vw;
@@ -678,6 +689,7 @@ p {
 }
 .main_header .header__logo a img {
   display: block;
+  height: 3.1770833333vw;
 }
 @media (max-width: 768px) {
   .main_header .header__menu {
@@ -1662,7 +1674,6 @@ p {
 .bl_video .bl_video__video {
   position: relative;
   width: 56%;
-  height: fit-content;
 }
 @media (max-width: 768px) {
   .bl_video .bl_video__video {
@@ -12457,8 +12468,15 @@ p {
   }
 }
 
+.cart-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .cart-blog__image {
   display: inline-flex;
+  height: 15.625vw;
+  width: 100%;
 }
 @media (max-width: 786px) {
   .cart-blog__image {
@@ -12471,6 +12489,11 @@ p {
   height: 100%;
   object-fit: cover;
   object-position: right;
+}
+.cart-blog__body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 .cart-blog__item {
   display: inline-flex;
@@ -12496,7 +12519,7 @@ p {
   font-family: "Helvetica Neue LT Pro", sans-serif;
   line-height: 1.4583333333vw;
   color: #141414;
-  margin: 0.2083333333vw 0px 0px 0px;
+  margin: 0.2083333333vw 0px 3.125vw 0px;
   font-weight: 500;
 }
 @media (max-width: 768px) {
@@ -12507,7 +12530,7 @@ p {
   }
 }
 .cart-blog__bottom {
-  margin: 3.125vw 0px 0px 0px;
+  margin: auto 0px 0px 0px;
   border-top: 1px solid #707070;
   display: flex;
   justify-content: space-between;
@@ -12966,7 +12989,7 @@ p {
   }
 }
 .blog-content__main {
-  padding: 5.2083333333vw 0px;
+  padding: 5.2083333333vw 0 0 0;
   font-family: "Helvetica Neue LT Pro", sans-serif;
 }
 @media (max-width: 768px) {
@@ -13028,11 +13051,12 @@ p {
   }
 }
 .blog-content__links {
-  padding: 1.6145833333vw 0px 0px 0px;
+  padding: 4.1666666667vw 0px 0px 0px;
   border-top: 1px solid #B0AFB0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 4.1666666667vw;
 }
 @media (max-width: 768px) {
   .blog-content__links {
@@ -13061,6 +13085,9 @@ p {
   .blog-content__social {
     gap: 8vw;
   }
+}
+.blog-content__social img {
+  margin: 0;
 }
 .blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4, .blog-content h5 {
   font-family: "Helvetica Neue LT Pro", sans-serif;
@@ -13135,6 +13162,8 @@ p {
 .swiper-blog__container {
   max-width: 53.6458333333vw;
   margin: 0px auto;
+  border-top: 1px solid #B0AFB0;
+  padding-top: 2.6041666667vw;
 }
 @media (max-width: 768px) {
   .swiper-blog__container {
@@ -13145,7 +13174,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 0px 1.0416666667vw 0px;
+  margin: 0px 0px 2.6041666667vw 0px;
 }
 @media (max-width: 768px) {
   .swiper-blog__header {
@@ -13154,7 +13183,7 @@ p {
   }
 }
 .swiper-blog__header span {
-  font-size: 0.9375vw;
+  font-size: 1.6666666667vw;
   line-height: 1.25vw;
   font-family: "Helvetica Neue LT Pro", sans-serif;
   color: #141414;
@@ -13180,7 +13209,7 @@ p {
 .swiper-blog__image {
   display: inline-flex;
   width: 16.6666666667vw;
-  height: 9.4270833333vw;
+  height: 10.4166666667vw;
 }
 @media (max-width: 768px) {
   .swiper-blog__image {
@@ -13188,12 +13217,13 @@ p {
     height: 48.2666666667vw;
   }
 }
-.swiper-blog__image img {
+.swiper-blog__image img, .swiper-blog__image a {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  margin: 0;
 }
 .swiper-blog__text, .swiper-blog p {
   display: inline-flex;
@@ -18543,14 +18573,14 @@ p {
 .content-aiscreen__title {
   color: #FFFFFF;
   font-family: "Helvetica Neue LT Pro Ex", sans-serif;
-  font-size: 1.7708333333vw;
+  font-size: 1.6666666667vw;
   line-height: 2.8125vw;
   font-weight: 400;
   margin-bottom: 2.5vw;
   text-transform: uppercase;
-  max-width: 23.4375vw;
-  letter-spacing: none;
+  max-width: none;
   min-height: 5.625vw;
+  letter-spacing: none;
   display: flex;
   align-items: flex-end;
 }
@@ -18640,9 +18670,9 @@ p {
   font-family: "Helvetica Neue LT Pro", sans-serif;
   font-size: 1.25vw;
   line-height: 1.7708333333vw;
-  max-width: 25vw;
   color: #FFFFFF;
   margin: 2.6041666667vw 0px 0px 0px;
+  max-width: 25vw;
 }
 @media (max-width: 768px) {
   .content-aiscreen__text {

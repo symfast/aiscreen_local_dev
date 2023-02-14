@@ -206,14 +206,14 @@
     &__title {
         color: $white;
         font-family: $HelvEx;
-        font-size: vw(34);
+        font-size: vw(32);
         line-height: vw(54);
         font-weight: 400;
         margin-bottom: vw(48);
         text-transform: uppercase;
-        max-width: vw(450);
-        letter-spacing: none;
+        max-width: none;
         min-height: vw(108);
+        letter-spacing: none;
         display: flex;
         align-items: flex-end;
         @media (max-width: 768px) {
@@ -301,9 +301,9 @@
         font-family: $Helv;
         font-size: vw(24);
         line-height: vw(34);
-        max-width: vw(480);
         color: $white;
         margin: vw(50) 0px 0px 0px;
+        max-width: vw(480);
         @media (max-width: 768px){
             font-size: vw_m(16); 
             line-height: vw_m(24);

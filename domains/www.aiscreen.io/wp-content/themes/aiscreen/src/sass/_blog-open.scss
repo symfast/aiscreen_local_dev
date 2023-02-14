@@ -165,7 +165,7 @@
     }
     // .blog-content__main
     &__main {
-        padding: vw(100) 0px;
+        padding: vw(100) 0 0 0;
         font-family: $Helv;
         @media (max-width: 768px){
             padding: vw_m(50) 0px vw_m(44) 0px;
@@ -217,11 +217,12 @@
     }
     // .blog-content__links
     &__links {
-        padding: vw(31) 0px 0px 0px;
+        padding: vw(80) 0px 0px 0px;
         border-top: 1px solid #B0AFB0;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: vw(80);
         @media (max-width: 768px){
             padding: vw_m(31) 0px 0px 0px; 
         }
@@ -244,6 +245,9 @@
         gap: vw(30);
         @media (max-width: 768px){
             gap: vw_m(30); 
+        }
+        img {
+            margin: 0;
         }
     }
     // .blog-content__swiper
@@ -320,6 +324,8 @@
     &__container {
         max-width: vw(1030);
         margin: 0px auto;
+        border-top: 1px solid #B0AFB0;
+        padding-top: vw(50);
         @media (max-width: 768px){
             max-width: none; 
         }
@@ -329,13 +335,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0px 0px vw(20) 0px;
+        margin: 0px 0px vw(50) 0px;
         @media (max-width: 768px){
             margin: 0px 0px vw_m(24) 0px; 
             padding: 0px vw_m(20);
         }
         span {
-            font-size: vw(18);
+            font-size: vw(32);
             line-height: vw(24);
             font-family: $Helv;
             color: $blackColor;
@@ -368,17 +374,18 @@
     &__image {
         display: inline-flex;
         width: vw(320);
-        height: vw(181);
+        height: vw(200);
         @media (max-width: 768px){
             width: 100%;
             height: vw_m(181);   
         }
-        img {
+        img, a {
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center;
+            margin: 0;
         }
     }
     // .swiper-blog__text

@@ -38,6 +38,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+
     @media (max-width: 390px) {
       position: relative;
     }
@@ -59,6 +61,16 @@
       z-index: 200;
     }
   }
+  .toggle-languages {
+    @media (max-width: 768px) {
+      padding-right: 17.6vw;
+    }
+    .switcher {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-18px);
+    }
+  }
   .header__logo {
     max-width: vw(238);
     min-width: vw(238);
@@ -73,6 +85,7 @@
       display: block;
       img {
         display: block;
+        height: vw(61);
       }
     }
   }
