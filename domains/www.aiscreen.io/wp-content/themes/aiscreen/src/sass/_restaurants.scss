@@ -33,7 +33,7 @@
         width: 100%;
         margin-bottom: vw_m(50);
       }
-      p {
+      h1 {
         font-family: $HelvEx;
         font-size: vw(24);
         font-weight: 300;
@@ -49,7 +49,19 @@
           font-size: vw_m(14);
         }
       }
-      h1 {
+      p {
+        display: block;
+        font-family: $HelvEx;
+        font-size: vw(62);
+        line-height: vw(92);
+        font-weight: 300;
+        color: #fff;
+        text-transform: uppercase;
+        // letter-spacing: vw(0);
+        @media (max-width: 768px) {
+            font-size: vw_m(30);
+            line-height: vw_m(42);
+        }
         color: $black;
         @media (max-width: 600px) {
           letter-spacing: -0.2px;
