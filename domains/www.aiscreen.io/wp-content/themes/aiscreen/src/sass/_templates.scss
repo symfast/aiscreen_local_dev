@@ -173,6 +173,7 @@
             }
             .filter__title {
               width: vw(347);
+                  min-width: vw(347);
               margin-right: vw(20);
               @media (max-width: 768px) {
                 margin-bottom: vw_m(20);
@@ -235,16 +236,17 @@
             .filter__menu {
               ul {
                 display: flex;
-                flex-direction: row;
+                flex-flow: row wrap;
                 justify-content: flex-start;
                 align-items: center;
+                    gap: vw(20);
                 @media (max-width: 768px) {
                   flex-wrap: wrap;
                   gap: vw_m(20);
                 }
 
                 li {
-                  margin-right: vw(60);
+                  margin-right: vw(40);
                   @media (max-width: 768px) {
                     margin-right: vw_m(20);
                   }
@@ -277,7 +279,7 @@
           }
           .filter__bottom {
             display: none;
-            padding-top: 0;
+                border-top: 1px solid #fff;
           }
           .bl_filter__orientation {
             // display: flex;
@@ -386,6 +388,7 @@
             height: 100%;
             object-fit: contain;
             object-position: center;
+            background: rgba(255,255,255,.05);
           }
         }
         .filter__item__title {

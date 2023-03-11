@@ -275,8 +275,8 @@
             height: auto;
           }
         }
-        .item__top__fix__first.fixed {
-          position: fixed;
+        .item__top__fix__first.fixedd {
+          //position: fixed;
           top: vw(30);
           background-color: #fff;
           z-index: 150;
@@ -538,6 +538,7 @@
         height: vw(275);
         border-right: vw(1) solid #dfe5eb;
         border-bottom: vw(1) solid #dfe5eb;
+        transition: 0.3s;
         @media (max-width: 992px) {
           height: auto;
           border: none;
@@ -553,7 +554,8 @@
         background-color: #fff;
         z-index: 150;
         padding-top: vw(15);
-        height: vw(200);
+        height: vw(150);
+        overflow: hidden;
         // width: 14.7%;
         .item__top__popular {
           height: 0 !important;
@@ -573,6 +575,7 @@
       }
       .item__top__fix.fixed.fixed_bottom {
         top: vw(966);
+          position: static;
       }
 
       ul {

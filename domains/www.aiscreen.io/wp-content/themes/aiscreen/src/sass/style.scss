@@ -1,5 +1,9 @@
 @function vw($px) {
-    @return ($px / 19.2) + vw;
+    @if($px == 1) {
+        @return 1px;
+    } @else {
+        @return ($px / 19.2) + vw;
+    }
 }
 @function vw_m($px) {
     @return ($px / 3.75) + vw;

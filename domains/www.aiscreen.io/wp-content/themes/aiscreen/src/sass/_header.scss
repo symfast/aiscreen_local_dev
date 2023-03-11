@@ -86,6 +86,12 @@
       img {
         display: block;
         height: vw(61);
+        width: vw(238);
+        @media (max-width: 768px) {
+          height: vw_m(40);
+          max-width: none;
+          width: auto;
+        }
       }
     }
   }

@@ -187,8 +187,10 @@
         background-color: transparent;
         border: none;
         padding: 0px vw(30) 0px 0px;
+        width: vw(50);
+        pictures {width: 100%;}
         & img {
-            max-width: 100%;
+            width: 100%;
         }
     }
     // .custom-content__link
@@ -330,7 +332,7 @@
 }
 //========================================================================================================================================================
 .bl_ready_to_get {
-    background-image: url("../img/bg/bg_ready_to_get.png");
+    background-image: url("../img/bg/bg_ready_to_get.webp");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

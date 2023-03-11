@@ -183,7 +183,7 @@
     }
     // .content-aiscreen__wrapper
     &__wrapper {
-        display: grid;
+        display: grid !important;
         grid-template-columns: repeat(3, 1fr);
         gap: vw(87) vw(68);
         @media (max-width: 768px) {

@@ -8,11 +8,11 @@
   position: relative;
   z-index: 50;
   min-height: vw(500);
-  background-color: #ccc;
+  /*background-color: #ccc;
   background-image: url("../img/bg/bg_header_home2.png");
   background-repeat: repeat;
   background-size: 100% auto;
-  background-position: center center;
+  background-position: center center;*/
   padding-top: vw(170);
   padding-bottom: vw(90);
   position: relative;
@@ -28,7 +28,7 @@
     display: block;
     width: 100%;
     height: vw(930);
-    background-image: url("../img/bg/bg_header_home.png");
+    background-image: url("../img/bg/bg_header_home.webp");
     background-size: cover;
     position: absolute;
     top: 0;
@@ -38,7 +38,7 @@
       height: vw_m(800);
     }
     @media (max-width: 390px) {
-      height: 56.5%;
+      height: 100vh;
     }
   }
   .bl_header__content {
@@ -325,6 +325,7 @@
         img {
           display: block;
           // height: 100%;
+          width: 100%;
         }
       }
     }
@@ -452,6 +453,7 @@
               background-size: 100% 100%;
               background-position: center center;
               padding: vw(5);
+              
               @media (max-width: 768px) {
                 height: auto;
               }
@@ -507,6 +509,7 @@
     
     @media (max-width: 768px) {
       width: 100%;
+      height: vw_m(200);
       margin-bottom: vw_m(45);
     }
 
@@ -685,7 +688,7 @@
               display: block;
               width: 100%;
               height: 100%;
-              object-fit: cover;
+              object-fit: contain;
               object-position: center;
             }
           }
@@ -698,7 +701,7 @@
 // ========================================
 // HARDWARE
 .bl_hardware {
-  background-image: url("../img/bg/bg_hardware.png");
+  background-image: url("../img/bg/bg_hardware.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1347,6 +1350,7 @@
             background-position: bottom right;
             background-size: cover;
             transition: 0.8s;
+            margin-right: vw(30) !important;
             @media (max-width: 768px) {
               width: vw_m(310);
               padding: vw_m(45) vw_m(30);
@@ -1395,7 +1399,7 @@
 // ========================================
 // READY TO GET
 .bl_ready_to_get {
-  background-image: url("../img/bg/bg_ready_to_get.png");
+  background-image: url("../img/bg/bg_ready_to_get.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

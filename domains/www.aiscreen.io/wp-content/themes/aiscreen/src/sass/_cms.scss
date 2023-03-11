@@ -36,7 +36,7 @@
 }
 
 body.admin-bar {
-        .main_header {
+        .main_header, .bl_table .item__top__fix.fixed {
             margin-top: 32px;
             @media (max-width: 768px) {
                 margin-top: 46px;

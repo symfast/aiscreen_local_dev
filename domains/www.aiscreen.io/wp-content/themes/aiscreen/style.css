@@ -1,0 +1,73 @@
+/*
+Theme Name:  AiScreen
+Text Domain: aiscreen
+Version: 1.0
+Description: AiScreen theme
+
+*/
+
+
+.guides-menu__title._active {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #707070;
+}
+
+.guides-menu__title._active::after {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.guides-menu__title_first::after {
+  display: none;
+}
+
+
+.app-content .main-custom-content__item {
+
+  position: relative;
+}
+
+
+.coming_soon {
+    background-color: #3a9cd3;
+    border: none;
+    /*color: white;*/
+    padding: 0.4vw 0.6vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 1vw ;
+    position: absolute;
+    right: 0.4em;
+    top: 0.4em;    
+}
+
+@media (max-width: 768px) {
+
+  .coming_soon {
+    background-color: #3a9cd3;
+    border: none;
+    /*color: white;*/
+    padding: 0.7em 0.6em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 1em ;
+    position: absolute;
+    right: 0.7em;
+    top: 0.7em;   
+}
+   
+
+
+
+}
+
+
+
+
+
+.blog-menu__menu .active{
+     color: #0019ff;
+}
