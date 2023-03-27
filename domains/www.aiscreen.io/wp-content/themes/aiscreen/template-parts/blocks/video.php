@@ -9,6 +9,8 @@
                                   <source src="<?php /*echo get_template_directory_uri()*/?>/resourse/video/7_Aiscreen_11.mp4" type="video/webm" /> 
 								</video>-->
 								<div class="video-holder"  style="display: none;">
+									<!--<script src="https://fast.wistia.com/embed/medias/tvik13ecf6.jsonp" defer></script>
+									<script src="https://fast.wistia.com/assets/external/E-v1.js" defer></script>-->
 									<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
 										<div class="wistia_responsive_wrapper"
 											 style="height:100%;left:0;position:absolute;top:0;width:100%;">

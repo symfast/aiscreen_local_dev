@@ -24,9 +24,9 @@
                     <a href="https://manager.aiscreen.io/login">
                         Login
                     </a>
-                    <a href="/schedule" class="btn_blue">
-                        Get Demo
-                    </a>
+					<a href="https://manager.aiscreen.io/login" class="btn_blue">
+						Free trial
+					</a>
                 </div>
 
                 <div class="header__burger">
@@ -38,8 +38,8 @@
                     <div class="block_close"></div>
                     <div class="header__mobile__content">
                         <div class="header__right_btns">
-                            <a href="/schedule" class="btn_blue">
-                                Get Demo
+                            <a href="https://manager.aiscreen.io/login" class="btn_blue">
+                                Free trial
                             </a>
                             <a href="https://manager.aiscreen.io/login">
                                 Login

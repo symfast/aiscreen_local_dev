@@ -182,30 +182,33 @@
   <script>
       jQuery(document).ready(function($) {
 
-          const player = new Plyr('#player', {
+		  $( window ).on( "load", function() {
+			  setTimeout(() => {
+				  $.getScript("https://fast.wistia.com/embed/medias/tvik13ecf6.jsonp");
+				  $.getScript("https://fast.wistia.com/assets/external/E-v1.js");
+			  }, 3000)
+		  })
+
+          /*const player = new Plyr('#player', {
               clickToPlay: false,
               autopause: true,
               hideControls: true,
-          });
+          });*/
 
           $('.plyr__poster').click(function() {
               $('.plyr__controls button:first').click();
           });
 
-          player.on('pause', event => {
+          /*player.on('pause', event => {
               $('.plyr').addClass('plyr--hide-controls');
-          });
-          const player_popup = new Plyr('#player2');
+          });*/
+          // const player_popup = new Plyr('#player2');
           // --------------------
           // --------------------
           // VIDEO
           $(document).on("click", '.bl_video .btn_play_video', function() {
               $('.bl_video .video_img').hide();
               $(this).hide();
-			  $('.bl_video .video .video-holder').append(`
-			  	<script src="https://fast.wistia.com/embed/medias/tvik13ecf6.jsonp" async></script>
-  				<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-			  `);
 			  $('.bl_video .video .video-holder').show();
               // player.play();
 

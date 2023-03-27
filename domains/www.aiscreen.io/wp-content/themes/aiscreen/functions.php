@@ -84,6 +84,8 @@ wp_enqueue_script( 'jquery' );
 
     wp_enqueue_script( 'libs1', get_template_directory_uri() . '/js/script.js', array(), time(), true);
     wp_enqueue_script( 'libs2', get_template_directory_uri() . '/js/script_jq.js', array(), time(), true);
+//    wp_enqueue_script( 'wistia1', 'https://fast.wistia.com/embed/medias/tvik13ecf6.jsonp', array(), null, true);
+//    wp_enqueue_script( 'wistia2', 'https://fast.wistia.com/assets/external/E-v1.js', array(), null, true);
 
 	 //wp_script_add_data( 'aiscreen-js', 'async', true );
 
@@ -259,7 +261,15 @@ function adjust_image_sizes_attr( $sizes, $size ) {
  }
  add_filter( 'wp_calculate_image_sizes', 'adjust_image_sizes_attr', 10 , 2 );
 
-function wpcf7_dequeue_redundant_scripts() {
+add_filter( 'max_srcset_image_width', 'max_srcset_image_width', 10 , 2 );
+
+function max_srcset_image_width() {
+    return 1024; // Desired max width in pixels.
+}
+
+add_filter('jpeg_quality', function($arg){return  95;});
+
+/*function wpcf7_dequeue_redundant_scripts() {
     $post = get_post();
     if ( is_singular() && !has_shortcode( $post->post_content, 'contact-form-7' ) ) {
         wp_dequeue_script( 'contact-form-7' );
@@ -269,5 +279,5 @@ function wpcf7_dequeue_redundant_scripts() {
         wp_dequeue_script( 'google-recaptcha' );
     }
 }
-add_action( 'wp_enqueue_scripts', 'wpcf7_dequeue_redundant_scripts', 99 );
+add_action( 'wp_enqueue_scripts', 'wpcf7_dequeue_redundant_scripts', 99 );*/
 
