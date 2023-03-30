@@ -7277,7 +7277,7 @@ p {
     margin-bottom: 13.3333333333vw;
   }
 }
-.bl_header_r .bl_header_r__text .bl_header_r__left p {
+.bl_header_r .bl_header_r__text .bl_header_r__left h1 {
   font-family: "Helvetica Neue LT Pro Ex", sans-serif;
   font-size: 1.25vw;
   font-weight: 300;
@@ -7288,24 +7288,37 @@ p {
   line-height: 130%;
 }
 @media (max-width: 768px) {
-  .bl_header_r .bl_header_r__text .bl_header_r__left p {
+  .bl_header_r .bl_header_r__text .bl_header_r__left h1 {
     font-size: 4.8vw;
   }
 }
 @media (max-width: 600px) {
-  .bl_header_r .bl_header_r__text .bl_header_r__left p {
+  .bl_header_r .bl_header_r__text .bl_header_r__left h1 {
     font-size: 3.7333333333vw;
   }
 }
-.bl_header_r .bl_header_r__text .bl_header_r__left h1 {
+.bl_header_r .bl_header_r__text .bl_header_r__left p {
+  display: block;
+  font-family: "Helvetica Neue LT Pro Ex", sans-serif;
+  font-size: 3.2291666667vw;
+  line-height: 4.7916666667vw;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
   color: #14121f;
 }
+@media (max-width: 768px) {
+  .bl_header_r .bl_header_r__text .bl_header_r__left p {
+    font-size: 8vw;
+    line-height: 11.2vw;
+  }
+}
 @media (max-width: 600px) {
-  .bl_header_r .bl_header_r__text .bl_header_r__left h1 {
+  .bl_header_r .bl_header_r__text .bl_header_r__left p {
     letter-spacing: -0.2px;
   }
 }
-.bl_header_r .bl_header_r__text .bl_header_r__left h1 span {
+.bl_header_r .bl_header_r__text .bl_header_r__left p span {
   color: #0019ff;
 }
 .bl_header_r .bl_header_r__text .bl_header_r__left .btn_free_trial {
