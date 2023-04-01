@@ -397,6 +397,7 @@ a.is-active-link {
 
   .tw-blog-content img {
     border-radius: 1.25rem;
+    width: 100%;
   }
 
   .tw-blog-content h2 {
