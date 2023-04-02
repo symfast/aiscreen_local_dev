@@ -3,6 +3,9 @@
 @import "_variables.scss";
 //End Variables
 // ========================================
+
+main:not(.tw-blog-single, .tw-blog) {overflow: hidden;}
+
 // BLOCK HEADER
 .bl_header {
   position: relative;
