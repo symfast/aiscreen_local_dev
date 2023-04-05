@@ -18,10 +18,7 @@
                     ]); ?>
                 </div>  
 				<div class="toggle-languages">
-				<?php /* echo do_shortcode('[gtranslate]'); */?>
-                <?php   get_template_part( 'template-parts/gtran-switch' ); ?> 
-
-
+				<?php echo do_shortcode('[gtranslate]'); ?>
 				</div>
 					<div class="header__right_btns">
                     <a href="https://manager.aiscreen.io/login">

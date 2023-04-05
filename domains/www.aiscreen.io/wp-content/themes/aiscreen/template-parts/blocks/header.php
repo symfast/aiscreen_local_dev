@@ -66,6 +66,8 @@
                             echo wp_get_attachment_image($image, $size);
                         }
                         ?>
+                        
+      
 
 
                       <div class="notebook__antenna antenna__right">
@@ -115,7 +117,7 @@
                               <div class="swiper-wrapper">
                                   <?php
                                     $images = get_sub_field('gallery1');
-                                    $size = 'medium'; // (thumbnail, medium, large, full or custom size)
+                                    $size = 'large'; // (thumbnail, medium, large, full or custom size)
                                     if ($images) : ?>
 
                                       <?php foreach ($images as $image_id) : ?>
@@ -132,7 +134,7 @@
                               <div class="swiper-wrapper">
                                   <?php
                                     $images = get_sub_field('gallery2');
-                                    $size = 'medium'; // (thumbnail, medium, large, full or custom size)
+                                    $size = 'large'; // (thumbnail, medium, large, full or custom size)
                                     if ($images) : ?>
                                       <?php foreach ($images as $image_id) : ?>
                                           <div class=" swiper-slide">
@@ -182,27 +184,20 @@
   <script>
       jQuery(document).ready(function($) {
 
-		  $( window ).on( "load", function() {
-			  setTimeout(() => {
-				  $.getScript("https://fast.wistia.com/embed/medias/tvik13ecf6.jsonp");
-				  $.getScript("https://fast.wistia.com/assets/external/E-v1.js");
-			  }, 3000)
-		  })
-
-          /*const player = new Plyr('#player', {
+          const player = new Plyr('#player', {
               clickToPlay: false,
               autopause: true,
               hideControls: true,
-          });*/
+          });
 
           $('.plyr__poster').click(function() {
               $('.plyr__controls button:first').click();
           });
 
-          /*player.on('pause', event => {
+          player.on('pause', event => {
               $('.plyr').addClass('plyr--hide-controls');
-          });*/
-          // const player_popup = new Plyr('#player2');
+          });
+          const player_popup = new Plyr('#player2');
           // --------------------
           // --------------------
           // VIDEO

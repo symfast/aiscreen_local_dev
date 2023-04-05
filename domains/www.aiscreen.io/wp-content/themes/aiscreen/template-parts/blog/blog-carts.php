@@ -6,9 +6,7 @@
                 <?php while ( $query->have_posts() ) : $query->the_post(); ?>    
                     <div class="blog-carts__cart cart-blog">
                         <a href="<?php the_permalink() ?>" class="cart-blog__image">
-                          
-
-                             <?php
+                     <?php
                         $image = get_field('image');
                         $size = 'large'; // (thumbnail, medium, large, full or custom size)
                         if ($image) {

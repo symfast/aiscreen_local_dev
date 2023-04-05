@@ -103,9 +103,6 @@
 </script>
 
 
-
-
-
 <script type="text/javascript">
 
     function blog_search(){
