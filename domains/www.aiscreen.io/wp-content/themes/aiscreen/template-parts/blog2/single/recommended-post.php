@@ -73,10 +73,10 @@
 
                 <div class="flex gap-[10px] flex-row">
                     <?php $term_list = wp_get_post_terms( $post->ID, 'category' ); if( $term_list ) { foreach( $term_list as $term ) { ?>
-                    <button
+                    <a href="<?php echo get_term_link( $term )?>" data-tid="<?php echo $term->term_id; ?>"
                         class="rounded-[9px] px-[9px] py-[3px]  text-[13px] font-[500]  leading-[17.55px] bg-[#F1F1F1] hover:bg-[#0071E2] hover:text-[#FFFFFF]">
                         <?php echo  $term->name; ?>
-                    </button>
+                    </a>
                     <?php }} ?>
                 </div>
             </div>
