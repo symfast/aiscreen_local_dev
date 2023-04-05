@@ -184,7 +184,7 @@
   <script>
       jQuery(document).ready(function($) {
 
-          const player = new Plyr('#player', {
+          /*const player = new Plyr('#player', {
               clickToPlay: false,
               autopause: true,
               hideControls: true,
@@ -197,7 +197,7 @@
           player.on('pause', event => {
               $('.plyr').addClass('plyr--hide-controls');
           });
-          const player_popup = new Plyr('#player2');
+          const player_popup = new Plyr('#player2');*/
           // --------------------
           // --------------------
           // VIDEO
